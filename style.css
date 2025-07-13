@@ -5,9 +5,8 @@ body{
 }
 
 nav{
-
   margin-top: 30px;
-  margin-left: 12cm;
+  margin-left: 4cm;
 }
 
 nav a{
@@ -38,4 +37,50 @@ nav a{
 .flex{
   display: flex;
   
+}
+
+#top1{
+  display: flex; 
+  font-family: ubuntu;
+
+}
+
+.course{
+  display: flex;
+}
+
+@media screen and (max-width: 700px){
+
+   #im1{
+    width: 90%;
+   }
+
+   .course{
+    display: grid;
+    grid-template-columns: 320px;
+    justify-content: center;
+    grid-gap: 10px;
+   }
+
+   .box1{
+    width: 320px;
+    padding: 10px;
+   }
+
+    nav{
+      display: grid;
+      grid-template-columns: 110px;
+    margin-top: 20px;
+    margin-left: 3cm;
+  }
+
+  nav a{
+  margin-right: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+}
 }
