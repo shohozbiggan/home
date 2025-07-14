@@ -4,7 +4,100 @@ body{
   font-family: "acme","Baloo Da 2";
 }
 
-nav{
+
+
+@media screen and (max-width: 700px){
+    #top1{
+      display: flex; 
+      font-family: ubuntu;
+
+    }
+   #im1{
+    width: 90%;
+   }
+
+   .course{
+    display: grid;
+    grid-template-columns: 320px;
+    justify-content: center;
+    grid-gap: 10px;
+   }
+
+   .box1{
+    width: 320px;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-right: 5px;
+   }
+
+    nav{
+      display: grid;
+      grid-template-columns: 110px;
+    margin-top: 20px;
+    margin-left: 3cm;
+  }
+
+  nav a{
+  margin-right: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+}
+}
+
+@media screen and (min-width: 700px){
+
+   #top1{
+  display: flex; 
+  font-family: ubuntu;
+
+}
+   .box1{
+    width: 300px;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-right: 5px;
+   }
+   .box1 ul{
+    font-size: 13px;
+   }
+
+.course{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+    nav{
+   
+    margin-top: 20px;
+    margin-left: 5cm;
+  }
+
+  nav a{
+  margin-right: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+}
+}
+
+@media screen and (min-width: 1366px){
+  nav{
+
   margin-top: 30px;
   margin-left: 4cm;
 }
@@ -20,13 +113,17 @@ nav a{
 
 .box1{
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   margin-right: 5px;
- 
 }
+
+.box1 ul{
+  font-size: 15px;
+}
+
 
 .head1{
   font-family: "Baloo Da 2";
@@ -47,40 +144,5 @@ nav a{
 
 .course{
   display: flex;
-}
-
-@media screen and (max-width: 700px){
-
-   #im1{
-    width: 90%;
-   }
-
-   .course{
-    display: grid;
-    grid-template-columns: 320px;
-    justify-content: center;
-    grid-gap: 10px;
-   }
-
-   .box1{
-    width: 320px;
-    padding: 10px;
-   }
-
-    nav{
-      display: grid;
-      grid-template-columns: 110px;
-    margin-top: 20px;
-    margin-left: 3cm;
-  }
-
-  nav a{
-  margin-right: 10px;
-  padding: 5px;
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  color: grey;
 }
 }
